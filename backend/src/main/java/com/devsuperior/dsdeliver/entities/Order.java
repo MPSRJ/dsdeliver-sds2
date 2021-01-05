@@ -51,6 +51,8 @@ public class Order implements Serializable {
 		this.status = status;
 	}
 
+	
+
 	public Long getId() {
 		return id;
 	}
@@ -59,12 +61,12 @@ public class Order implements Serializable {
 		this.id = id;
 	}
 
-	public String getAdress() {
+	public String getAddress() {
 		return address;
 	}
 
-	public void setAdress(String adress) {
-		this.address = adress;
+	public void setAddress(String address) {
+		this.address = address;
 	}
 
 	public Double getLatitude() {
@@ -101,6 +103,10 @@ public class Order implements Serializable {
 
 	public Set<Product> getProducts() {
 		return products;
+	}
+
+	public void setProducts(Set<Product> products) {
+		this.products = products;
 	}
 
 	@Override
